@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Work+Sans:wght@400;500&display=swap');
+@import "tailwindcss";
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.text-inter{
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --color-dark-1: #09091A; /* fondo */
+    --color-dark-2: #1B1D36; /* contenedores, etc */
+    --color-purple-1: #8B5CF6; /* botones, etc */
+    --color-gray-1: #F2F4F7; /* texto principal */
+    --color-gray-2: #A0AEC0; /* descripciones */
+    --color-amatista-1: #4B3B73; /* bordes */
+    --color-tip-1: #8B5CF6; /* tip 1 */
+    --color-success-1: #10B981; /* aceptado, positivo */
+    --color-warning-1: #FBBF24; /* advertencia */
+    --color-error-1: #EF4444; /* error, negativo */
+}
+
+/* text color */
+.text-dark-1 { color: var(--color-dark-1); }
+.text-dark-2 { color: var(--color-dark-2); }
+.text-purple-1 { color: var(--color-purple-1); }
+.text-gray-1 { color: var(--color-gray-1); }
+.text-gray-2 { color: var(--color-gray-2); }
+.text-amatista-1 { color: var(--color-amatista-1); }
+.text-tip-1 { color: var(--color-tip-1); }
+.text-success-1 { color: var(--color-success-1); }
+.text-warning-1 { color: var(--color-warning-1); }
+.text-error-1 { color: var(--color-error-1); }
+
+/* background color */
+.bg-dark-1 { background-color: var(--color-dark-1); }
+.bg-dark-2 { background-color: var(--color-dark-2); }
+.bg-purple-1 { background-color: var(--color-purple-1); }
+.bg-gray-1 { background-color: var(--color-gray-1); }
+.bg-gray-2 { background-color: var(--color-gray-2); }
+.bg-amatista-1 { background-color: var(--color-amatista-1); }
+.bg-tip-1 { background-color: var(--color-tip-1); }
+.bg-success-1 { background-color: var(--color-success-1); }
+.bg-warning-1 { background-color: var(--color-warning-1); }
+.bg-error-1 { background-color: var(--color-error-1); }
+
+.cssborder-1{
+    border: 2px solid var(--color-amatista-1);
+    border-radius: 8px;
+    box-shadow: var(--color-amatista-1);
+}
+
+/* Tema oscuro personalizado para Driver.js */
+.driver-popover.driverjs-theme {
+    background-color: #1B1D36;
+    color: #F2F4F7;
+    border: 1px solid #4B3B73;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.15);
+    padding: 16px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.driver-popover.driverjs-theme .driver-popover-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #8B5CF6;
+    margin-bottom: 8px;
+}
+
+.driver-popover.driverjs-theme .driver-popover-description {
+    font-size: 13px;
+    color: #A0AEC0;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.driver-popover.driverjs-theme button.driver-popover-next-btn,
+.driver-popover.driverjs-theme button.driver-popover-prev-btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 6px;
+    padding: 8px 16px;
+    border: none;
+    text-shadow: none;
+}
+
+.driver-popover.driverjs-theme button.driver-popover-next-btn { background-color: #8B5CF6; color: white; }
+.driver-popover.driverjs-theme button.driver-popover-next-btn:hover { background-color: #7C3AED; }
+
+.driver-popover.driverjs-theme button.driver-popover-prev-btn { background-color: transparent; color: #A0AEC0; border: 1px solid #4B3B73; }
+.driver-popover.driverjs-theme button.driver-popover-prev-btn:hover { color: #F2F4F7; border-color: #8B5CF6; }
+
+.driver-popover.driverjs-theme .driver-popover-progress-text { color: #4B3B73; font-family: 'Inter', sans-serif; font-size: 10px; }
+.driver-popover.driverjs-theme button.driver-popover-close-btn { color: #A0AEC0; }
+.driver-popover.driverjs-theme button.driver-popover-close-btn:hover { color: #F2F4F7; }
+
+/* Flechas del popover */
+.driver-popover.driverjs-theme .driver-popover-arrow-side-left.driver-popover-arrow { border-left-color: #1B1D36; }
+.driver-popover.driverjs-theme .driver-popover-arrow-side-right.driver-popover-arrow { border-right-color: #1B1D36; }
+.driver-popover.driverjs-theme .driver-popover-arrow-side-top.driver-popover-arrow { border-top-color: #1B1D36; }
+.driver-popover.driverjs-theme .driver-popover-arrow-side-bottom.driver-popover-arrow { border-bottom-color: #1B1D36; }
